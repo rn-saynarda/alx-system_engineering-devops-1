@@ -2,12 +2,4 @@
 
 # Get the list of currently running processes
 
-ps -aux
-
-# Display the processes in a user-oriented format
-
-ps -fU
-
-# Show the process hierarchy in ASCII art
-
-ps -f -U --forest
+ps -auxf
