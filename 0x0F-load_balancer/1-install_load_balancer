@@ -10,11 +10,11 @@ apt-get -y install haproxy
 # edit config file
 server_config=\
 "
-frontend  smartcodez-frontend
+frontend  comfypaddy-frontend
         bind *:80
         mode http
-        default_backend smartcodez-backend
-backend smartcodez-backend
+        default_backend comfypaddy-backend
+backend comfypaddy-backend
         balance roundrobin
         server 64924-web-0 134.202.157.13:80 check
         server 64924-web-02 100.26.240.23:80 check
